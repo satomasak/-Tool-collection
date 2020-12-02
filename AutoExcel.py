@@ -65,7 +65,7 @@ for c in range(5,12):
             pass
         else:
         #レコードの新規作成
-            create_rec = browser.find_element_by_xpath('xpathの貼り付け')
+            create_rec = browser.find_element_by_link_text('aタグで囲まれたテキスト')
             time.sleep(2)
             create_rec.click()
 
@@ -119,10 +119,11 @@ for c in range(5,12):
                 save = browser.find_element_by_xpath('xpathの貼り付け')
                 save.click()
                 time.sleep(3)
-            back_page = browser.find_element_by_xpath('xpathの貼り付け')
+	    time.sleep(3)
+	    back_page = browser.find_element_by_link_text('aタグで囲まれたテキスト')
             back_page.click()
-            time.sleep(3)
-    print(date_val+'納品のデータ入力完了')
+            time.sleep(2)
+    print(date_end+'納品のデータ入力完了')
 print('データ入力すべて終了')
 
 

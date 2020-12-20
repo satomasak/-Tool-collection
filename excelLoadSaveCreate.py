@@ -25,7 +25,7 @@ with pd.ExcelWriter(filePath, engine='openpyxl') as writer:
 #エクセルを新しく作成
 import openpyxl as xl
 
-wb = openpyxl.Workbook()
+wb = xl.Workbook()
 wb.create_sheet('シート名')
 
 wb.save('任意のファイルパス+任意のファイル名')
